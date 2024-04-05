@@ -23,7 +23,7 @@ document.addEventListener("click", function (event) {
   }
   
   function renderTenJokes(dataJoke) {
-    document.getElementById("setup").innerHTML = dataJoke.map(joke => joke.setup + " " + joke.punchline).join("<br>");
+    document.getElementById("body").innerHTML = dataJoke.map(joke => joke.setup + " " + joke.punchline).join("<br>");
     document.getElementById("error").innerHTML = "";
   }
   
